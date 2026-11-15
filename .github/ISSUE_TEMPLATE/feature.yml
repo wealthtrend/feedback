@@ -1,0 +1,36 @@
+name: Feature request
+description: An idea for something Wealthtrend could do, or do better
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **This page is public.** Please don't include real amounts, account numbers, names or screenshots of your own finances. Made-up numbers are fine.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The situation or question you have. What's hard or missing today?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: How you imagine it working. A rough idea is fine.
+    validations:
+      required: false
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you handle it now?
+      description: A spreadsheet, another app, not at all…
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: At the bottom of the app.
+    validations:
+      required: false
