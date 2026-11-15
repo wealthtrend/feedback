@@ -1,0 +1,35 @@
+name: Bug report
+description: Something in Wealthtrend doesn't work as it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **This page is public.** Please don't include real amounts, account numbers, names or screenshots of your own finances. Made-up numbers are fine.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, and what did you see?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Filled in automatically when you use the app's "Report a bug" link. Otherwise it's at the bottom of the app.
+    validations:
+      required: false
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: Filled in automatically when you use the app's "Report a bug" link.
+    validations:
+      required: false
